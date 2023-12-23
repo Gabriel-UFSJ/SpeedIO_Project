@@ -62,28 +62,40 @@ O `scraping_cookies` foi desenvolvido para tentar contornar o problema de bloque
 Endpoints:
 
 Endpoint /salve_info:
+
 Método: POST
+
 Resumo: Scrape And Save Info
+
 Operação ID: scrape_and_save_info_salve_info_post
+
 Parâmetro do corpo da solicitação: 
 - **url**: Url do site a ser acessado.
 - **clean_data**: Flag para limpeza de quebras de linhas.
 
 Tipo: ScrapingRequest
+
 Necessário: Sim
+
 Respostas:
 - **Código 200**: Resposta bem-sucedida (ScrapingResponse)
 - **Código 422**: Erro de validação (HTTPValidationError)
 
 Endpoint /get_info:
+
 Método: POST
+
 Resumo: Get Info
+
 Operação ID: get_info_get_info_post
+
 Parâmetro do corpo da solicitação:
 - **url**: Url do site a ser recuperado.
 
 Tipo: GetInfoRequest
+
 Necessário: Sim
+
 Respostas:
 - **Código 200**: Resposta bem-sucedida (GetInfoResponse)
 - **Código 422**: Erro de validação (HTTPValidationError)
