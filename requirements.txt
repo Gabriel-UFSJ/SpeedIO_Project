@@ -1,0 +1,9 @@
+pymongo
+requests
+python-dotenv
+fastapi
+uvicorn
+httpx
+pytest
+beautifulsoup4
+selenium
